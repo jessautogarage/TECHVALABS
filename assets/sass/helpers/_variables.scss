@@ -1,0 +1,23 @@
+/*---------------------------
+	Fonts
+----------------------------*/
+@import url('https://fonts.googleapis.com/css?family=Lato:400,700|Source+Sans+Pro:400,400i,600');
+
+// fonts
+$base-font-size: 16;
+$base-font: 'Source Sans Pro', sans-serif;
+$heading-font: 'Lato', sans-serif;
+
+
+// color
+$dark-gray: #2b2e3a;
+$white: #fff;
+$black: #000;
+$mid-gray: #7e8690;
+$green: #87d271;
+
+$theme-primary-color: $green;
+$body-bg-color: $white;
+$section-bg-color: #edecec;
+$text-color: $mid-gray;
+$heading-color: $dark-gray;

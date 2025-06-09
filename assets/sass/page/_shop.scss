@@ -1,0 +1,99 @@
+/*--------------------------------------------------------------
+	#shop page
+--------------------------------------------------------------*/
+/*--------------------------------------------------------------
+#10.1	shop-section
+--------------------------------------------------------------*/
+.shop-section {
+	.shop-grids {
+		margin: 0 -10px;
+	}
+
+	.shop-grids .grid {
+		width: calc(33.33% - 20px);
+		float: left;
+		margin: 0 10px 25px;
+
+		@include media-query(767px) {
+			width: calc(50% - 20px);
+		}
+
+		@include media-query(550px) {
+			width: calc(100% - 20px);
+			float: none;
+		}
+	}
+
+	.img-add-cart {
+		position: relative;
+		overflow: hidden;
+
+		.add-cart {
+			width: 100%;
+			position: absolute;
+			left: 0;
+			bottom: -62px;
+			@include transition-time(0.3s);
+		}
+
+		a {
+			background: $theme-primary-color;
+			text-align: center;
+			padding: 20px;
+			display: block;
+			color: $white;
+			font-weight: 600;			
+		}
+
+		a i {
+			display: inline-block;
+			padding-left: 5px;
+		}
+	}
+
+	.shop-grids .grid:hover .add-cart {
+		bottom: 0;
+	}
+
+	.grid .details {
+		text-align: center;
+		padding: 25px 15px;
+		box-shadow: 0px 8px 48.38px 10.62px rgba(0, 0, 0, 0.06);
+
+		h4 {
+			font-size: 16px;
+			font-size: calc-rem-value(16);
+			line-height: 1.4em;
+			margin: 0 0 0.3em;
+			text-transform: capitalize;
+		}
+
+		h4 a {
+			color: $heading-color;
+		}
+
+		h4 a:hover {
+			color: $theme-primary-color;
+		}
+
+		.price {
+			font-family: $heading-font;
+			font-size: 16px;
+			font-size: calc-rem-value(16);
+			color: $theme-primary-color;
+
+			@include media-query(991px) {
+				font-size: 18px;
+				font-size: calc-rem-value(18);
+			}
+		}
+
+		del {
+			font-weight: 400;
+			color: #aaa;
+			font-size: 14px;
+			display: inline-block;
+			padding-left: 8px;
+		}
+	}
+}

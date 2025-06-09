@@ -1,0 +1,270 @@
+/*--------------------------------------------------------------
+	#service single page
+--------------------------------------------------------------*/
+/*--------------------------------------------------------------
+#9.0	service-single-section
+--------------------------------------------------------------*/
+.service-single-section {
+	.service-single-content {
+		@include widther(1200px) {
+			padding-left: 20px;
+		}
+
+		.service-pic {
+			margin-bottom: 50px;
+		}
+
+		.theme-btn {
+			margin-top: 20px;
+		}
+
+		h2 {
+			font-size: 28px;
+			font-size: calc-rem-value(28);
+			margin: 1em 0;
+			text-transform: capitalize;
+
+			@include media-query(767px) {
+				font-size: 25px;
+				font-size: calc-rem-value(25);
+			}
+		}
+
+		h3 {
+			font-size: 18px;
+			font-size: calc-rem-value(18);
+			text-transform: capitalize;
+			margin: 1.7em 0 1em;
+		}
+
+		p {
+			margin-bottom: 1.3em;
+		}
+
+		ul {
+			list-style: none;
+
+			@include media-query(767px) {
+				font-size: 15px;
+				font-size: calc-rem-value(15);
+			}
+
+			li {
+				position: relative;
+				padding-left: 25px;
+				line-height: 1.7em;
+				color: #121212;
+			}
+
+			> li + li {
+				margin-top: 8px;
+			}
+
+			li i {
+				display: inline-block;
+				color: $theme-primary-color;
+				position: absolute;
+				left: 0;
+				top: 5px;
+			}
+		}
+
+		.service-features {
+			overflow: hidden;
+
+			ul {
+				width: 50%;
+				display: inline-block;
+				float: left;
+
+				@include media-query(767px) {
+					width: 100%;
+					float: none;
+					display: block;
+					margin-top: 10px;
+				}
+			}
+		}
+	}
+
+	/*** service single tab ***/
+	.service-single-tab {
+		margin-top: 70px;
+		margin-bottom: 40px;
+
+		@include media-query(991px) {
+			margin-top: 40px;
+		}
+
+		@include media-query(767px) {
+			margin-top: 40px;
+		}
+	}
+
+	.service-single-tab .nav {
+		overflow: hidden;
+		margin: 0;
+
+		li {
+			float: left;
+			padding-left: 0;
+		}
+
+		> li + li {
+			margin-top: 0;
+			margin-left: 3px;
+			@include media-query(767px) {
+				margin-left: 1px;
+			}
+		}
+
+		a {
+			font-family: $heading-font;
+			font-size: 16px;
+			font-size: calc_rem_value(16);
+			font-weight: 600;
+			color: $heading-color;
+			text-transform: uppercase;
+			padding: 10px 25px;
+			border: 1px solid transparentize($theme-primary-color, 0.5);
+
+			@include media-query(767px) {
+				font-size: 14px;
+				font-size: calc_rem_value(14);
+				padding: 8px 12px;
+			}
+
+			@include media-query(350px) {
+				padding: 8px;
+			}
+		}
+
+		.active a,
+		a:hover {
+			background: $theme-primary-color;
+			color: $white;
+		}
+	}
+
+	.tab-content {
+		background-color: transparentize($theme-primary-color, 0.9);
+		padding: 35px 40px;
+
+		@include media-query(767px) {
+			padding: 25px 20px;
+		}
+
+		.tab-pane p {
+			margin-bottom: 20px;
+
+			@include media-query(767px) {
+				margin-bottom: 15px;
+			}
+		}
+
+		.tab-pane p:last-child {
+			margin-bottom: 0;
+		}
+	}
+
+	.request-service {
+		@include background-style("../images/service-single-form-bg.jpg", center center, cover, no-repeat, local);
+		padding: 45px 50px 25px;
+		margin-top: 80px;
+		position: relative;
+
+		@include media-query(1199px) {
+			padding: 45px 50px;
+		}
+
+		@include media-query(991px) {
+			padding: 35px 30px;
+		}
+
+		&:before {
+			content: "";
+			@include overlay(transparentize($theme-primary-color, 0.05));
+		}
+
+		> form,
+		h3 {
+			position: relative;
+			z-index: 1;
+		}
+
+		h3 {
+			font-size: 22px;
+			font-size: calc-rem-value(22);
+			color: $white;
+			margin: 0 0 1em;
+
+			@include media-query(991px) {
+				font-size: 18px;
+				font-size: calc-rem-value(18);
+			}
+		}
+
+		input,
+		textarea {
+			background: transparent;
+			width: 100%;
+			height: 45px;
+			font-size: 15px;
+			font-size: calc-rem-value(15);
+			border: 1px solid $white;
+			color: $white;
+			border-radius: 0;
+			padding: 6px 18px;
+			box-shadow: none;
+
+			&:focus {
+				box-shadow: none;
+				border-color: $theme-primary-color;
+			}
+		}
+
+		form {
+			margin: 0 -15px;
+			overflow: hidden;
+			@include placeholder-style($white, 16px, normal);
+		}
+
+		form > div {
+			width: calc(50% - 30px);
+			float: left;
+			margin: 0 15px 30px;
+
+			@include media-query(1199px) {
+				width: calc(100% - 30px);
+				float: none;
+			}
+
+			@include media-query(550px) {
+				width: calc(100% - 30px);
+				float: none;
+			}
+		}
+
+		form > .submit-area {
+			margin-bottom: 0;
+
+			button {
+				background: $white;
+				color: $heading-color;
+				font-weight: 600;
+				height: 45px;
+				line-height: 45px;
+				text-align: center;
+				border: 0;
+				box-shadow: none;
+				margin: 0;
+				padding: 0 45px;
+				@include transition-time(0.3s);
+			}
+
+			button:hover {
+				background: $theme-primary-color;
+			}
+		}
+	}
+}

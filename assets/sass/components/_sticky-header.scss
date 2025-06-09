@@ -1,0 +1,42 @@
+.sticky-header,
+.header-style-2 .sticky-header {
+	width: 100%;
+	position: fixed;
+	left: 0;
+	top: -200px;
+	z-index: 9999;
+	opacity: 0;
+	@include transition-time(0.7s);
+}
+
+.sticky-on,
+.header-style-2 .sticky-on {
+	opacity: 1;
+	top: 0;
+}
+
+.header-style-1 .sticky-header {
+	background: #313131;
+	background: -webkit-linear-gradient(top, #313131 98px, transparent 98px);
+	background: -moz-linear-gradient(top, #313131 98px, transparent 98px);
+	background: -o-linear-gradient(top, #313131 98px, transparent 98px);
+	background: -ms-linear-gradient(top, #313131 98px, transparent 98px);
+	background: linear-gradient(top, #313131 98px, transparent 98px);
+}
+
+.header-style-2 .sticky-header {
+	@include widther(992px) {
+		width: calc(100% - 60px);
+		left: 30px;
+	}
+
+	@include widther(1200px) {
+		width: calc(100% - 80px);
+		left: 40px;
+	}
+}
+
+.header-style-3 .sticky-header {
+	background: $white;
+	box-shadow: 0 0 15px rgba(0,0,0, 0.1);
+}

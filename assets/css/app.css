@@ -1,0 +1,15 @@
+.cta-btn {
+      display: inline-block;
+      background: #2f81f7;
+      color: white;
+      padding: 1rem 2rem;
+      border-radius: 8px;
+      text-decoration: none;
+      margin-top: 2rem;
+      font-weight: 600;
+      transition: transform 0.2s ease, background 0.3s ease;
+    }
+    .cta-btn:hover {
+      transform: scale(1.05);
+      background: #1d64c1;
+    } 

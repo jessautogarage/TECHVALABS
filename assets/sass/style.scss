@@ -1,0 +1,151 @@
+/*------------------------------------------------------------------
+[Master Stylesheet]
+Theme Name:     Jhair - Business, corporate, consulting agency HTML5 Template
+Version:        1.0.0
+Author:         designakb
+URL:            https://themeforest.net/user/designakb
+-------------------------------------------------------------------*/
+
+
+/*--------------------------------------------------------------
+>>> TABLE OF CONTENTS:
+----------------------------------------------------------------
+#0.1	Theme Reset Style
+#0.2	Global Elements
+#0.3	header
+#0.4	hero-slider
+#0.5	footer
+#0.6	work-process-section
+#0.7	about-section
+#0.8	services-section
+#0.9	testimonials-section
+#1.0	projects-section
+#1.1	fun-fact-section
+#1.2	cta-with-team-section
+#1.3	cta-with-partners
+#1.4	blog-section
+
+
+----------------------------------------------------------------
+	home style 2
+----------------------------------------------------------------
+#2.1	features-section
+#2.2	about-section-s2
+#2.3	services-section-s2
+#2.4	contact-section
+
+
+----------------------------------------------------------------
+	home style 3
+----------------------------------------------------------------
+#3.1	services-section-s3
+#3.2	projects-sections-s2
+
+
+----------------------------------------------------------------
+	about page
+----------------------------------------------------------------
+#4.1	mission-vision-section
+#4.2	experience-section
+#4.3	testimonials-section-s2
+#4.4	team-section
+#4.5	partners-section
+
+
+----------------------------------------------------------------
+	contact page
+----------------------------------------------------------------
+#5.1	contact-pg-section
+
+
+----------------------------------------------------------------
+	blog page
+----------------------------------------------------------------
+#6.1	blog-pg-section
+
+
+----------------------------------------------------------------
+	blog single page
+----------------------------------------------------------------
+#7.1	blog-single-section
+
+
+----------------------------------------------------------------
+	project single page
+----------------------------------------------------------------
+#8.1	project-sigle-section
+
+
+----------------------------------------------------------------
+	service single page
+----------------------------------------------------------------
+#9.0	service-single-section
+
+
+----------------------------------------------------------------
+	shop page
+----------------------------------------------------------------
+#10.1	shop-section
+
+
+----------------------------------------------------------------
+	shop single page
+----------------------------------------------------------------
+#11.1	shop-single-section
+
+
+----------------------------------------------------------------
+	404 page
+----------------------------------------------------------------
+#12.1  error-404-section
+
+
+
+----------------------------------------------------------------*/
+
+// helpers
+@import "helpers/variables";
+@import "helpers/functions";
+@import "helpers/mixins";
+
+// base
+@import "base/base";
+
+
+// components
+@import "components/section-title";
+@import "components/buttons";
+@import "components/form";
+@import "components/social-links";
+@import "components/page-title";
+@import "components/preloader";
+@import "components/blog-sidebar";
+@import "components/pagination";
+@import "components/accordion";
+@import "components/service-sidebar";
+@import "components/shop-sidebar";
+
+// layout
+@import "layout/header";
+@import "layout/hero-slider";
+@import "layout/footer";
+
+// components
+@import "components/sticky-header";
+
+
+// page
+@import "page/home-default";
+@import "page/home-style2";
+@import "page/home-style3";
+@import "page/about";
+@import "page/contact";
+@import "page/blog";
+@import "page/blog-single";
+@import "page/project-single";
+@import "page/service-single";
+@import "page/shop";
+@import "page/shop-single";
+@import "page/error-404";
+
+

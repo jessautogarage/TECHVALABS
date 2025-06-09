@@ -1,0 +1,153 @@
+/****************************************
+	shop sidebar
+****************************************/
+.shop-sidebar {
+	@include media-query(991px) {
+		max-width: 300px;
+		margin-top: 70px;
+	}
+
+	> .widget + .widget {
+		margin-top: 65px;
+	}
+
+	.widget > h3 {
+		font-size: 20px;
+		font-size: calc-rem-value(20);
+		text-transform: capitalize;
+		margin: 0 0 1.5em;
+	}
+
+	.widget ul {
+		list-style: none;
+	}
+
+
+	/*** search-widget ***/
+	.search-widget {
+		div {
+			position: relative;
+		}
+
+		button {
+			background: transparent;
+			font-size: 20px;
+			font-size: calc-rem-value(20);
+			color: $theme-primary-color;
+			border: 0;
+			outline: 0;
+			padding: 0;
+			margin: 0;
+			position: absolute;
+			right: 15px;
+			top: 55%;
+			@include translatingY();
+		}
+
+		input {
+			background-color: #f3f3f3;
+			height: 50px;
+			padding: 6px 40px 6px 20px;
+			border: 0;
+			border-radius: 0;
+			box-shadow: none;
+		}
+	}
+
+
+	/*** categories-widget ***/
+	.categories-widget {
+		ul li {
+			position: relative;
+			color: #727780;
+
+			span {
+				text-align: right;
+				color: #8b8b8b;
+				position: absolute;
+				right: 0;
+				top: 50%;
+				@include translatingY();
+			}
+
+			a {
+				color: #727780;
+			}
+		}
+
+		ul > li + li {
+			margin-top: 15px;
+		}
+
+		ul li a:hover {
+			color: $theme-primary-color;
+		}
+	}
+
+
+	/*** popular-product-widget ***/
+	.popular-product-widget {
+		ul li {
+			overflow: hidden;
+		}
+
+		ul > li + li {
+			margin-top: 20px;
+		}
+
+		.product-image {
+			width: 70px;
+			float: left;
+		}
+
+		.product-info {
+			width: calc(100% - 70px);
+			float: left;
+			padding-left: 20px;
+		}
+
+		.product-title {
+			// font-family: $heading-font;
+		}
+
+		.product-info > a {
+			color: $heading-color;
+			display: block;
+			margin-bottom: 4px;
+		}
+
+		.product-info > a:hover {
+			color: $theme-primary-color;
+		}
+
+		.star-rating {
+			margin-bottom: 5px;
+		}
+
+		.star-rating i {
+			font-size: 12px;
+			font-size: calc-rem-value(12);
+			color: $theme-primary-color;
+		}
+	}
+
+
+	/*** tag-widget ***/
+	.tag-widget .tagcloud {
+		a {
+			font-size: 14px;
+			font-size: calc-rem-value(14);
+			color: #727780;
+			display: inline-block;
+			border: 1px solid #e8e8e8;
+			padding: 6px 15px;
+			margin: 0 5px 5px 0;
+		}
+
+		a:hover {
+			background-color: $theme-primary-color;
+			border-color: $theme-primary-color;
+			color: $white;
+		}
+	}
+}

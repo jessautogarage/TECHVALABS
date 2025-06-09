@@ -1,0 +1,374 @@
+/*--------------------------------------------------------------
+	about page
+--------------------------------------------------------------*/
+/*--------------------------------------------------------------
+#4.1	mission-vision-section
+--------------------------------------------------------------*/
+.mission-vision-section {
+	padding-bottom: 55px;
+
+	@include media-query(991px) {
+		padding-bottom: 35px;
+	}
+
+	@include media-query(767px) {
+		padding-bottom: 25px;
+	}
+
+	.mission-vision-grids {
+		margin: 0 -15px;
+
+		@include media-query(767px) {
+			margin: 0 -7.5px;
+		}
+	}
+
+	.mission-vision-grids .grid {
+		width: calc(33.33% - 30px);
+		float: left;
+		margin: 0 15px 50px;
+
+		@include media-query(991px) {
+			width: calc(50% - 30px);
+		}
+
+		@include media-query(767px) {
+			width: calc(50% - 15px);
+			margin: 0 7.5px 50px;
+		}
+
+		@include media-query(600px) {
+			width: calc(100% - 15px);
+			float: none;
+		}
+	}
+
+	.title-area {
+		text-align: center;
+		margin-bottom: 50px;
+
+		h2 {
+			font-size: 26px;
+			font-size: calc-rem-value(26);
+			font-weight: normal;
+			line-height: 1.4em;
+			margin: -0.38em 0 0;
+
+			@include media-query(991px) {
+				font-size: 22px;
+				font-size: calc-rem-value(22);
+			}
+		}
+	}
+
+	.grid .img-holder {
+		margin-bottom: 30px;
+	}
+
+	.grid h3 {
+		font-size: 22px;
+		font-size: calc-rem-value(22);
+		margin: 0 0 0.6em;
+
+		@include media-query(991px) {
+			font-size: 18px;
+			font-size: calc-rem-value(18);
+		}
+	}
+
+	.grid p {
+		margin-bottom: 0;
+	}
+}
+
+
+/*--------------------------------------------------------------
+#4.2	experience-section
+--------------------------------------------------------------*/
+.experience-section {
+	.content-area {
+		background-color: #fafaf9;
+		overflow: hidden;
+		position: relative;
+
+		.left-col,
+		.right-col {
+			width: 50%;
+
+			@include media-query(991px) {
+				width: 100%;
+				float: none;
+			}
+		}
+
+		.left-col {
+			@include background-style("../images/about/skill-left-col.jpg", center center, cover, no-repeat, local);			
+			float: left;
+			height: 100%;
+			position: absolute;
+			left: 0;
+			top: 0;
+
+			@include media-query(991px) {
+				float: none;
+				position: relative;
+				height: 400px;
+			}
+		}
+
+		.right-col {
+			float: right;
+			padding: 100px 70px;
+
+			@include media-query(1199px) {
+				padding: 100px 60px;
+			}
+
+			@include media-query(991px) {
+				float: none;
+				padding: 90px 50px;
+			}
+
+			@include media-query(767px) {
+				padding: 80px 20px;
+			}
+		}
+
+		h2 {
+			font-size: 36px;
+			font-size: calc-rem-value(36);
+			margin: -0.19em 0 0.6em;
+
+			@include media-query(991px) {
+				font-size: 30px;
+				font-size: calc-rem-value(30);
+			}
+
+			@include media-query(767px) {
+				font-size: 26px;
+				font-size: calc-rem-value(26);
+			}
+		}
+
+		p {
+			margin-bottom: 2em;
+		}
+
+		ul {
+			font-size: 18px;
+			font-size: calc-rem-value(18);
+			font-style: italic;
+			list-style-type: none;
+			margin-bottom: 35px;
+
+			@include media-query(991px) {
+				font-size: 16px;
+				font-size: calc-rem-value(16);
+			}
+		}
+
+		ul li {
+			padding-left: 35px;
+			position: relative;
+
+			@include media-query(991px) {
+				padding-left: 25px;
+			}
+		}
+
+		ul > li + li {
+			margin-top: 15px;
+		}
+
+		ul i {
+			position: absolute;
+			left: 0;
+			top: 5px;
+			color: $theme-primary-color;
+		}
+	}
+
+	/*** skills progress bar ***/
+	.skills {
+		padding-top: 20px;
+
+		.skill {
+			margin-bottom: 30px;
+
+			&:last-child {
+				margin-bottom: 0;
+
+				.progress {
+					margin-bottom: 0;
+				}
+			}
+		}
+
+		h6 {
+			font-size: 16px;
+			font-size: calc-rem-value(16);
+			margin: 0 0 0.6em;
+
+			@include media-query(991px) {
+				font-size: 14px;
+				font-size: calc-rem-value(14);
+			}
+		}
+
+		.progress {
+			background-color: #e6e6e6;
+			height: 5px;
+			box-shadow: none;
+			overflow: visible;
+			box-shadow: none;
+			position: relative;
+			border-radius: 0;
+
+			> span {
+				font-size: 16px;
+				font-size: calc-rem-value(16);
+				color: $text-color;
+				padding: 2px 6px;
+				text-align: center;
+				position: absolute;
+				right: 20px;
+				top: -32px;
+				@include rounded-border(3px);
+
+				@include media-query(991px) {
+					padding: 0 6px;
+				}
+
+				@include media-query(767px) {
+					font-size: 14px;
+					font-size: calc-rem-value(14);
+				}
+			}
+		}
+
+		.progress-bar {
+			background: $theme-primary-color;
+			position: relative;
+			box-shadow: none;
+		    border-radius: 0;
+		}
+	}
+}
+
+
+/*--------------------------------------------------------------
+#4.3	testimonials-section-s2
+--------------------------------------------------------------*/
+.testimonials-section-s2 {
+	@extend .testimonials-section;
+	background-color: $white;
+
+	.testimonials-area p {
+	 	color: #646c77;
+	}
+
+	.owl-theme .owl-controls {
+		margin-top: 40px;
+	}
+
+	.owl-theme .owl-dots .owl-dot.active span, 
+	.owl-theme .owl-dots .owl-dot:hover span {
+		background: $theme-primary-color;
+	}
+}
+
+.about-pg-project-section {
+	padding-top: 0;
+}
+
+
+/*--------------------------------------------------------------
+#4.4	team-section
+--------------------------------------------------------------*/
+.team-section {
+	padding-top: 0;
+
+	.title-text {
+		text-align: right;
+		margin-top: 25px;
+
+		@include media-query(991px) {
+			text-align: left;
+			margin: 25px 0 50px;
+		}
+
+		p {
+			margin: 0;
+		}
+	}
+
+	.team-grids .grid {
+		width: 25%;
+		float: left;
+
+		@include media-query(991px) {
+			width: 50%;
+			margin: 0 0 25px;
+		}
+
+		@include media-query(500px) {
+			width: 100%;
+			float: none;
+		}
+	}
+
+	.team-grids .details {
+		background: $white;
+		padding: 30px 25px;
+		box-shadow: 0px 6px 18.9px 2.1px rgba(0, 0, 0, 0.04);
+
+		@include media-query(767px) {
+			padding: 20px 15px;
+		}
+	}
+
+	.details h5 {
+		font-size: 16px;
+		font-size: calc-rem-value(16);
+		margin: 0 0 0.3em;
+	}
+
+	.details h5 + span {
+		font-size: 14px;
+		font-size: calc-rem-value(14);
+	}
+}
+
+.team-pg-section {
+    padding: 110px 0;
+
+    @include media-query(991px) {
+        padding: 90px 0;
+    }
+
+    @include media-query(767px) {
+        padding: 80px 0;
+    }
+}
+
+
+/*--------------------------------------------------------------
+#4.5	partners-section
+--------------------------------------------------------------*/
+.partners-section {
+	background-color: #f9f9f9;
+	padding: 70px 0 58px;
+	text-align: center;
+
+	.grid {
+		border: 1px solid #e8e8e8;
+		padding-bottom: 1px;
+		margin-bottom: 1px;
+		padding: 25px;
+	}
+
+	.grid img {
+		width: auto;
+		margin: 0 auto;
+	}
+}
