@@ -4410,9 +4410,9 @@ img {
   }
 }
 
-.services-section-s2 .services-grids .grid:hover {
+/* .services-section-s2 .services-grids .grid:hover {
   background: url("../images/service-bg.jpg") center 0/auto no-repeat local;
-}
+} */
 
 .services-section-s2 .services-grids .grid {
   width: calc(33.33% - 30px);
@@ -4518,7 +4518,7 @@ img {
 }
 
 .services-section-s2 .grid:hover:before {
-  background: rgba(135, 210, 113, 0.97);
+  background: #00bcd4;
 }
 
 .service-s2-pg-section {
